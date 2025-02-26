@@ -1,4 +1,5 @@
 theme: minima
 collections:
   mypages:
-    output: true 
+    output: true
+    
