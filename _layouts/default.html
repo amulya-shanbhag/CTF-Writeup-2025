@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <title>CTF Writeups</title>
     <style>
         body {
             background-color: #000;
@@ -12,49 +12,63 @@
             margin: 0;
             padding: 20px;
         }
-        .navbar {
-            background-color: #111;
-            padding: 10px 20px;
-            border-bottom: 2px solid white;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        .navbar a {
-            color: #fff;
-            text-decoration: none;
+        .title {
+            text-align: center;
+            font-size: 28px;
             font-weight: bold;
-            margin-right: 20px;
-            border-bottom: 2px solid transparent;
-            transition: 0.3s;
-        }
-        .navbar a:hover {
             border-bottom: 2px solid white;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
-        h1 {
-            color: #fff;
+        .links {
+            text-align: center;
+            margin-bottom: 30px;
         }
-        a {
-            color: #fff;
-            text-decoration: none;
-            border: 2px solid white;
-            padding: 8px 16px;
+        .links a {
             display: inline-block;
-            margin-top: 10px;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border: 2px solid white;
+            margin: 5px;
             transition: 0.3s;
         }
-        a:hover {
+        .links a:hover {
             background-color: white;
             color: black;
         }
+        .content {
+            text-align: left; /* Ensures content is left-aligned */
+            margin-top: 20px;
+            padding: 10px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
-    <body>
+<body>
 
-    <div class="navbar">
-        <h1>CTF Writeups</h1>
-        
+    <div class="container">
+        <!-- Centered Title -->
+        <div class="title">CTF Writeups</div>
+
+        <!-- Centered Navigation Links -->
         <div class="links">
-            <a href="/CTF-Writeup-2025/mypages/ios/">iOS Writeup</a>
-            <a href="/CTF-Writeup-2025/mypages/chromebook/">Chromebook Writeup</a>
+            <a href="/CTF-Writeup-2025/mypages/ios/">iOS Exploit Writeup</a>
+            <a href="/CTF-Writeup-2025/mypages/chromebook/">Chromebook Exploit Writeup</a>
         </div>
+
+        <!-- Left-Aligned Content from Markdown -->
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
 
 </body>
 </html>
