@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">CTF Writeups</a>
+            <div>
+                <a href="/" class="px-4 hover:underline">Home</a>
+                <a href="/mypages/" class="px-4 hover:underline">Writeups</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-500 text-white text-center py-20">
+        <h1 class="text-4xl font-bold">Capture The Flag Write-ups</h1>
+        <a href="/mypages/" class="mt-6 inline-block bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
+            View Writeups
+        </a>
+    </header>
+
+    <!-- Content Section -->
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+        <h2 class="text-2xl font-bold text-gray-800">{{ page.title }}</h2>
+        <div class="mt-4 text-gray-700">{{ content }}</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+        <p>&copy; 2025 CTF Writeups. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
