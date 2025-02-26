@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Chromebook"
-date: 2024-02-26
+permalink: CTF-Writeup-2025/includes/chromebook/
 ---
 
 Prerequisites: Extracted the tar file and processed the chromebook image using cLeapp and Magnet Axiom Examine.
