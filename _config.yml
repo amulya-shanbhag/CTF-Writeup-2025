@@ -2,4 +2,4 @@ theme: minima
 collections:
   mypages:
     output: true
-    
+    permalink: /mypages/:name/
