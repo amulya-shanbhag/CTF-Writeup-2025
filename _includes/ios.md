@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "IOS"
-date: 2024-02-25
+permalink: CTF-Writeup-2025/includes/ios/
 ---
 
 Prerequisites:
