@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "IOS"
-permalink: CTF-Writeup-2025/includes/ios/
+permalink: /includes/ios/
 ---
 
 Prerequisites:
