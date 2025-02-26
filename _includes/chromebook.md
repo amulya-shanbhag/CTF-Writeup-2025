@@ -1,8 +1,10 @@
-Prerequisites: Extracted the tar file and processed the chromebook image using cLeapp and Magnet Axiom Examine.
+---
+layout: default
+title: "Chromebook"
+date: 2024-02-26
+---
 
----
-title: Chromebook
----
+Prerequisites: Extracted the tar file and processed the chromebook image using cLeapp and Magnet Axiom Examine.
 
 1. **Feeling: Connected** - _What was the ip address of the Chromebook?_
 **Flag**: 172.19.70.25  
