@@ -1,5 +1,23 @@
-theme: minima
+title: "CTF Writeups"
+description: "A collection of CTF challenges and writeups."
+baseurl: ""
+url: "https://DeepWaterSecurity.github.io"  
+
+theme: minima  
+
 collections:
   mypages:
-    output: true
-    permalink: /mypages/:name/
+    output: true  
+    permalink: /mypages/:name/  
+
+# Set a default layout for all pages inside _mypages/
+defaults:
+  - scope:
+      path: "_mypages"
+      type: "mypages"
+    values:
+      layout: "default"  # Automatically applies _layouts/default.html
+
+# Markdown Processing
+markdown: kramdown
+permalink: pretty  # Ensures URLs don’t have .html extensions
