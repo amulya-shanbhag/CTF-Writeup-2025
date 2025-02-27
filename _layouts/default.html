@@ -60,8 +60,9 @@
 
         <!-- Centered Navigation Links -->
         <div class="links">
-            <a href="/CTF-Writeup-2025/mypages/ios/">iOS Exploit Writeup</a>
-            <a href="/CTF-Writeup-2025/mypages/chromebook/">Chromebook Exploit Writeup</a>
+            {% for page in site.mypages %}
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            {% endfor %}
         </div>
 
         <!-- Left-Aligned Content from Markdown -->
