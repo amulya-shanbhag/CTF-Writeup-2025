@@ -1,3 +1,8 @@
+---
+title: "Android"
+layout: default
+---
+
 <h2>**Android**</h2>
 
 1. **That's a lot** - _What animal was in the TikTok sent via text?_  
