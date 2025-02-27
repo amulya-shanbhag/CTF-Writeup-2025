@@ -9,6 +9,12 @@ collections:
   mypages:
     output: true  
 
+defaults:
+  - scope:
+      path: ""  # Applies to all files in the site
+    values:
+      layout: "default"  # Uses _layouts/default.html
+
 # Markdown Processing
 markdown: kramdown
 permalink: pretty  # Ensures URLs don’t have .html extensions
