@@ -9,14 +9,6 @@ collections:
   mypages:
     output: true  
 
-# Set a default layout for all pages inside _mypages/
-defaults:
-  - scope:
-      path: "_mypages"
-      type: "mypages"
-    values:
-      layout: "default"  # Automatically applies _layouts/default.html
-
 # Markdown Processing
 markdown: kramdown
 permalink: pretty  # Ensures URLs don’t have .html extensions
