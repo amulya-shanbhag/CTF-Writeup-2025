@@ -47,6 +47,6 @@ layout: default
   **Flag**: <span style="color:red">12-6</span>  
 
 
-14. **Login Credentials Required** - What is Marys username on geocaching.com?
+14. **Login Credentials Required** - What is Marys username on geocaching.com?  
   **Flag**:  <span style="color:red">geomaryr</span>  
 
