@@ -1,7 +1,7 @@
 ---
-layout: default
 title: "IOS"
-permalink: /mypages/ios/
+layout: default
+permalink: /CTF-Writeup-2025/mypages/ios/
 ---
 
 Prerequisites:
