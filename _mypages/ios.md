@@ -24,7 +24,7 @@ The same above report contained the device's phone number <br/>
 **Flag:** MARY  
 <br/>
 For stored contact information, I looked through the address book records in the iLeapp report, there was only one contact stored at the time. <br/>
-![Phone Number](/CTF-Writeup-2025/docs/assets/IOSPhoneNumber.png)  
+![Phone Number](/CTF-Writeup-2025/docs/assets/IOSPhoneNumber.png | width=600)  
 <br/>  
  
 5. **Call Me, Maybe** -- *Out of all the incoming calls, how many were answered?* <br/>
