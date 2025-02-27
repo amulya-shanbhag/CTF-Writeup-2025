@@ -80,7 +80,7 @@ There were multiple youtube and web searches for this TV show
 
 3. **Your shirt your way** - _What was the name of the shirt company?_  
   **Flag**: <span style="color:red">TypeShirt</span>   
-  In the same folder as the above flag, I searched with shirt and it mentioned shirt company as Typeshirt  
+  In the same folder as the above flag, I searched with shirt which showed shirt company as Typeshirt  
   <img src="/CTF-Writeup-2025/docs/assets/imagesc/typeshirt.png" alt="Shirt Company" style="width:600px; height:auto;">
 
 4. **Shoe will have fun with this one** - _What is the shoe image named with file extension?_  
