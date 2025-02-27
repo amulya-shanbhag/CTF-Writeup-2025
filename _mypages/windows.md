@@ -6,7 +6,7 @@ layout: default
 <h2>Windows</h2>
 
 1. **whoami?** - _What is the SID for the user "chick"?_  
-  Flag: <span style="color:red">S-1-5-21-493923485-410185161-2094537482-1001</span>  
+  **Flag**: <span style="color:red">S-1-5-21-493923485-410185161-2094537482-1001</span>  
 
 2. **Goodbye!** - _When was the last logoff time for the user "chick"? (YYYY-MM-DD HH:MM:SS)_  
   **Flag**: <span style="color:red">2024-11-24 17:36:55</span>  
