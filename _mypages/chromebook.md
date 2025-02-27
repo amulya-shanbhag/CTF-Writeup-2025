@@ -105,28 +105,28 @@ There were multiple youtube and web searches for this TV show
 8. **Cat Nat** - _How long is the video watched on 2024-11-17 10:04:45 PM EST? Format: MM:SS_  
   **Flag**: <span style="color:red">29:24</span>  
   For the video watched looked under the Youtube folder - _Takeout/YouTube and YouTube Music/history/watch-history.html_ and searched with time and opened the link and the video duration from youtube is the flag.
-  <img src="/CTF-Writeup-2025/docs/assets/imagesc/youtube.png" alt="Floppers" style="width:600px; height:auto;">
-  <img src="/CTF-Writeup-2025/docs/assets/imagesc/youtube2.png" alt="Floppers" style="width:600px; height:auto;">
+  <img src="/CTF-Writeup-2025/docs/assets/imagesc/youtube.png" alt="Search" style="width:600px; height:auto;">
+  <img src="/CTF-Writeup-2025/docs/assets/imagesc/youtube2.png" alt="Youtube" style="width:600px; height:auto;">
 
 9. **I need your approval** - _Who was the users boss? FIRSTNAME LASTNAME_  
   **Flag**: <span style="color:red">Gregory Fields</span>  
   From the email coversations, the user's boss was asking for a document.
-  <img src="/CTF-Writeup-2025/docs/assets/imagesc/boss.png" alt="Floppers" style="width:600px; height:auto;">
+  <img src="/CTF-Writeup-2025/docs/assets/imagesc/boss.png" alt="Boss Name" style="width:600px; height:auto;">
 
 10. **Help I don't want to work!** - _What was the marketing website used after the shameless search?_  
   **Flag**: <span style="color:red">pipedrive.com</span>  
   The question said marketing site used "after" the shameless search, found the related search, but found no marketing site after that timestamp, looked on google about pipedrive and that was the flag
   (https://www.google.com/url?q=http://www.pipedrive.com/en/gettingstarted-crm&usg=AOvVaw3ZyXGztGlGXtl0u1xTcI8q)
-  <img src="/CTF-Writeup-2025/docs/assets/imagesc/pipedrive.png" alt="Floppers" style="width:600px; height:auto;">
+  <img src="/CTF-Writeup-2025/docs/assets/imagesc/pipedrive.png" alt="Marketing site" style="width:600px; height:auto;">
 
 11. **Stranger Danger**- _What was the IP address attatched to the sketchy email address?_  
   **Flag**: <span style="color:red">185.70.40.130</span>
   There was an email hackergotyou@proton.me asking for ransom, checking the email headers showed the sender's IP
-  <img src="/CTF-Writeup-2025/docs/assets/imagesc/hackerip.png" alt="Floppers" style="width:600px; height:auto;">
+  <img src="/CTF-Writeup-2025/docs/assets/imagesc/hackerip.png" alt="IPaddress" style="width:600px; height:auto;">
 
 12. **Wandering Around** - _At the following time 2024-09-26 21:21:03 what was the geo location of the users IP Address? Country, State, City_  
   **Flag**: <span style="color:red">US,District of Columbia,Washington</span>  
   I had observed this format on file _/Takeout/Google Account/ruthonthego98.SubscriberInfo.html_ after visiting it a multiple times for the previous flags 
-  <img src="/CTF-Writeup-2025/docs/assets/imagesc/country.png" alt="Floppers" style="width:600px; height:auto;">
+  <img src="/CTF-Writeup-2025/docs/assets/imagesc/country.png" alt="country" style="width:600px; height:auto;">
 
 
