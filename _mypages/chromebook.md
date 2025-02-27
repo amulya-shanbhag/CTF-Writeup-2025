@@ -100,7 +100,7 @@ There were multiple youtube and web searches for this TV show
   **Flag**: <span style="color:red">Gregory Fields</span>  
 
 11. **Help I don't want to work!** - _What was the marketing website used after the shameless search?_  
-  **Flag**: <span style="color:red">[pipedrive.com]</span>  
+  **Flag**: <span style="color:red">pipedrive.com</span>  
   (https://www.google.com/url?q=http://www.pipedrive.com/en/gettingstarted-crm&usg=AOvVaw3ZyXGztGlGXtl0u1xTcI8q)
 
 12. **Stranger Danger**- _What was the IP address attatched to the sketchy email address?_  
