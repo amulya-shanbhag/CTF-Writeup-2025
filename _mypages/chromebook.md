@@ -72,7 +72,7 @@ There were multiple youtube and web searches for this TV show
   **Flag**: <span style="color:red">iphone aesthetic wallpaper</span>  
 
 2. **Drive those ads away** - _What was the model of the Kia in the advertisement?_  
-  **Flag**:  <span style="color:red">2025 Sorento X-Pro SX-Prestige AWD</span>  
+  **Flag**: <span style="color:red">2025 Sorento X-Pro SX-Prestige AWD</span>  
 
 3. **Nice kicks** - _What is the name of the shoes created?_  
   **Flag**: <span style="color:red">floppers</span>  
@@ -81,10 +81,10 @@ There were multiple youtube and web searches for this TV show
   **Flag**: <span style="color:red">TypeShirt</span>   
 
 5. **Shoe will have fun with this one** - _What is the shoe image named with file extension?_  
-  **Flag**: <span style="color:red">f12cb76daad6c8d1.png</span>    
+  **Flag**: <span style="color:red">f12cb76daad6c8d1.png</span>   
 
 6. **Identify yourself!** - _What is the account user ID?_  
-  **Flag**: <span style="color:red">252838291214</span>
+  **Flag**: <span style="color:red">252838291214</span>  
   [file:///D:/Magnet%20CTF/Chromebook-20250206T193803Z-001/Chromebook/takeout-20241129T224833Z-001/Takeout/Google%20Account/ruthonthego98.SubscriberInfo.html](file:///D:/Magnet%20CTF/Chromebook-20250206T193803Z-001/Chromebook/takeout-20241129T224833Z-001/Takeout/Google%20Account/ruthonthego98.SubscriberInfo.html)  
 
 7. **Back in my day** - _What was the users birthday? YYYY-MM-DD_  
