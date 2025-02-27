@@ -3,7 +3,7 @@ title: "Android"
 layout: default
 ---
 
-<h2>**Android**</h2>
+<h2>Android</h2>
 
 1. **That's a lot** - _What animal was in the TikTok sent via text?_  
   **Flag**:  <span style="color:red">Deer</span>   
@@ -34,7 +34,7 @@ layout: default
   **Flag**:  <span style="color:red">0</span>  
 
 
-<h2>**Android Takeout**</h2>
+<h2>Android Takeout</h2>
 
 1. **Deadpool?** - _When was the Mint Mobile advertisement watched? YYYY-MM-DD HH:MM:SS EST_  
   **Flag**:  <span style="color:red">2024-11-06 12:01:21</span>   
