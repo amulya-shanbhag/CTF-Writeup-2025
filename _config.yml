@@ -8,7 +8,6 @@ theme: minima
 collections:
   mypages:
     output: true  
-    permalink: /mypages/:name/  
 
 # Set a default layout for all pages inside _mypages/
 defaults:
