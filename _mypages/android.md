@@ -40,8 +40,8 @@ Searched with keyword "sim" and that displayed android sim card information
 6.**Some Connections** - _What device did the user connect to on 2024-11-05?_ (5)  
 **Flag**: <span style="color:red">Google Pixel Watch 02N0</span>  
 
-Searched with the keyword "connected" to see if there were any such email or notifications. In the email on 2024-11-05, email from Google pixel was recieved, but wasn't sure if from the email if it was connected to the device. 
-Further searched "Google Pixel" and under bluetooth devices was the connection on the same day.
+Searched with the keyword "connected" to see if there were any such email or notifications. In the email on 2024-11-05, email from Google pixel was recieved, but wasn't sure if from the email if it was connected to the device.  
+Further searched "Google Pixel" and under bluetooth devices was the connection on the same day.  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/pixel.png" alt="Email" style="width:600px; height:auto;">  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/pixel2.png" alt="Bluetooth" style="width:600px; height:auto;">  
 
