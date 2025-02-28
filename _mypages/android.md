@@ -58,7 +58,7 @@ File path: \data\user\0\com.google.android.as\databases\history_db
 Had extracted Mary's resume in previous challenges which also mentioned her degree
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/degree.png" alt="Degree" style="width:600px; height:auto;">  
 
-9.**That would look good in a Frame** - _What is the name of the structure seen in the picture taken at night?_ (10) 
+9.**That would look good in a Frame** - _What is the name of the structure seen in the picture taken at night?_ (10)  
 **Flag**: <span style="color:red">Moran Frame</span>    
 
 For the pictures taken, I checked the Google photos on aLeapp which did not give me the original picture, and as android photos are stored under dcim, I performed a search with dcim and downloaded the original picture from Axiom image. I tried all other names on the structure. I zoomed into the picture and found "Moran" written in light gray. Entered Moran as flag and that was wrong.
@@ -73,7 +73,7 @@ Further I extracted the exif data of the picture which gave me the location of t
 I tried the answer from the clue given, googled "Natur" and it's German. 
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/german.png" alt="Language" style="width:600px; height:auto;">  
 
-11.**Striking Some Keys** - _What singer appeared in a TikTok video watched on 2024-11-15 at 1:01:26 AM UTC?_ (10) 
+11.**Striking Some Keys** - _What singer appeared in a TikTok video watched on 2024-11-15 at 1:01:26 AM UTC?_ (10)   
 **Flag**: <span style="color:red">Teddy Swims</span>  
 
 Tiktok media under Social networking section, looked for the video at the given time and there he was  
@@ -85,7 +85,7 @@ Tiktok media under Social networking section, looked for the video at the given 
 Searched "congrat" on Axiom and found email from fitbit congratulating Mary  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/congrats.png" alt="Fitbit" style="width:600px; height:auto;">  
 
-13.**Lets Get Famous** - _How many followers does Mary have on TikTok?_ (25) 
+13.**Lets Get Famous** - _How many followers does Mary have on TikTok?_ (25)   
 **Flag**:  <span style="color:red">0</span>  
 
 From the [abrignoni blogspot](https://abrignoni.blogspot.com/2018/11/finding-tiktok-messages-in-android.html), I got that the follower count for tiktok can be accessed from tiktok db - The Android TikTok app keeps message related data in SQLite databases located in the following path: _userdata/data/com.zhiliaoapp.musically/databases/_  
@@ -103,30 +103,30 @@ For the ads watched, looked into the youtube history and searched keyword "mint"
 File path: _Takeout/YouTube and YouTube Music/history/watch-history.html_  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/mint.png" alt="Ad watched" style="width:600px; height:auto;">   
 
-2.**Best job I ever had** - _When was the Senior Marketing Accociate job started? YYYY-MM_ (5) 
+2.**Best job I ever had** - _When was the Senior Marketing Accociate job started? YYYY-MM_ (5)  
 **Flag**: <span style="color:red">2023-02</span>  
 
 Again from Mary's resume downloaded  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/jobstart.png" alt="start date" style="width:600px; height:auto;">  
 
-3.**Tryhard** - _What was this users GPA?_ (5) 
+3.**Tryhard** - _What was this users GPA?_ (5)  
 **Flag**: <span style="color:red">4.0</span>   
 
 I did not find this on Mary's resume and went on looking for documents stored in the Takeout/Drive/, found another file - Jones_Resume2024.docx abd the GPA was mentioned there.  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/gpa.png" alt="GPA" style="width:600px; height:auto;">  
 
-4.**That's not very nice of you** - _What is the secret message found in an important file?_ (5) 
+4.**That's not very nice of you** - _What is the secret message found in an important file?_ (5)  
 **Flag**: <span style="color:red">ihateruth</span>  
 
 Another document in the drive folder contained the flag  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/hate.png" alt="Secret message" style="width:600px; height:auto;">  
 
-5.**Getting Healthy** - _What fitness membership did this user join?_ (5) 
+5.**Getting Healthy** - _What fitness membership did this user join?_ (5)  
 **Flag**: <span style="color:red">Fitbit</span>  
 
 From the previous flags, the answer is Fitbit and also found in Takeout/Gemini/Fitbit/ folder  
 
-6.**Weekly Cycle** - _What day of the week did the user join this membership?_ (5)  
+6.**Weekly Cycle** - _What day of the week did the user join this membership?_ (5)   
 **Flag**: <span style="color:red">Tuesday</span>
 
 The path Takeout/Gemini/Fitbit/Your Profile contained a profile.csv which showed the membership date as 11/5/2024 which was Tuesday.  
@@ -134,7 +134,7 @@ However, at first I entered Sunday which is mentioned as start of the week and l
 
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/profile.png" alt="Profile" style="width:600px; height:auto;">  
 
-7.**I think this IS LAND?** - _What was the closest trail to the picture of a body of water?_ (10) 
+7.**I think this IS LAND?** - _What was the closest trail to the picture of a body of water?_ (10)  
 **Flag**:  <span style="color:red">ISLAND LINE</span>
 
 From the image in the takeout file, downloaded the image and extracted the exif data from the file and got location: 44 deg 29' 25.30" N, 73 deg 14' 4.99" W, looking for this on google maps closest trail to this is Island line trail.  
@@ -143,7 +143,7 @@ From the image in the takeout file, downloaded the image and extracted the exif 
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/waterbody2.png" alt="exif data" style="width:600px; height:auto;">   
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/waterbody3.png" alt="location" style="width:600px; height:auto;">   
 
-8.**Flashbang** - _What is the switch on the bottom left of the "About ______" website for?_ (10)  
+8.**Flashbang** - _What is the switch on the bottom left of the "About ______" website for?_ (10)   
 **Flag**: <span style="color:red">Dark mode</span>
 
 I didn't understand what website I should be looking for, later I looked into the android image in axiom and was typing "about" and about_play displayed in search suggestions and clicked on it showed the url - https://support.google.com/googleplay/?p=about_play, checking out this website showed language on the bottom left and and slightly overlapped with dark mode sttings
