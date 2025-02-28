@@ -14,4 +14,3 @@ defaults:
       path: ""  # Applies to everything
     values:
       layout: "default"
-
