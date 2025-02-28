@@ -60,10 +60,10 @@ layout: default
  **Flag**: <span style="color:red">Moran Frame</span>    
 
  For the pictures taken, I checked the Google photos on aLeapp which did not give me the original picture, and as android photos are stored under dcim, I performed a search with dcim and downloaded the original picture from Axiom image. I tried all other names on the structure. I zoomed into the picture and found "Moran" written in light gray. Entered Moran as flag and that was wrong.
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/moranframe.png" alt="logs" style="width:600px; height:auto;">  
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/moranframe.png" alt="Moranimage" style="width:600px; height:auto;">  
 
  Further I extracted the exif data of the picture which gave me the location of the image taken - 44°28'53.7"N 73°13'25.3"W, Checked this out on google maps
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/moran2.png" alt="logs" style="width:600px; height:auto;"> <img src="/CTF-Writeup-2025/docs/assets/imagesa/moran3.png" alt="logs" style="width:600px; height:auto;">  
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/moran2.png" alt="structure" style="width:600px; height:auto;"> <img src="/CTF-Writeup-2025/docs/assets/imagesa/moran3.png" alt="maps" style="width:600px; height:auto;">  
 
 10. **I love Natur** - _What language was the nature website in?_  
  **Flag**: <span style="color:red">German</span>  
