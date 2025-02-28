@@ -56,13 +56,12 @@
             let urlParams = new URLSearchParams(window.location.search);
             let selectedPage = urlParams.get("page");
             
-            if (selectedPage) {
-                let selectedLink = document.querySelector(`.links a[href*='${selectedPage}']`);
-                if (selectedLink) {
-                    selectedLink.classList.add("selected");
-                    document.querySelector(".links").prepend(selectedLink);
+            document.querySelectorAll(".links a").forEach(link => {
+                let page = link.getAttribute("href").split("=")[1];
+                if (page === selectedPage) {
+                    link.classList.add("selected");
                 }
-            }
+            });
         });
     </script>
 </head>
