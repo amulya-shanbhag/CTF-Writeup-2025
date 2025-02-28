@@ -39,7 +39,7 @@ Processed the IOS image using iLeapp and Magnet Axiom Examine.
 5.**Correct Me If I'm Wrong..** -- *How many words typed were autocorrected?* (10)<br/>
  **Flag**: <span style="color:red">51</span>   
  <br/>
- From the <a href="https://www.infosecinstitute.com/resources/digital-forensics/ios-forensics/)" style="color: orange; text-decoration: underline;text-decoration-style: dotted;">infosec</a> , I learnt the keyboard caches contained in the file - /private/var/mobile/Library/Keyboard which contained user_model_database.sqlite<br/>  
+ From the <a href="https://www.infosecinstitute.com/resources/digital-forensics/ios-forensics/" style="color: orange; text-decoration: underline;text-decoration-style: dotted;">infosec</a> , I learnt the keyboard caches contained in the file - /private/var/mobile/Library/Keyboard which contained user_model_database.sqlite<br/>  
  <img src="/CTF-Writeup-2025/docs/assets/autocorrected.png" alt="Auto correct" style="width:600px; height:auto;">    
  <br/>
    
@@ -79,13 +79,13 @@ Searched the processed image on Magnet Examine with the name of coffee shop and 
  <img src="/CTF-Writeup-2025/docs/assets/locationnashville.png" alt="location" style="width:600px; height:auto;">  
  <br/>
 
-11.**Important FACTor**- *What is the answer to second the equation in notes?* (25) 
- **Flag**: <span style="color:red">432</span>     
+11.**Important FACTor**- *What is the answer to second the equation in notes?* (25)   
+**Flag**: <span style="color:red">432</span>     
  <br/>
  The question mentioned in notes and went through the Apple notes under Documents and submitted 216 as flag which turned out to be wrong. Luckily this question allowed multiple attempts.  
  <img src="/CTF-Writeup-2025/docs/assets/factor1.png" alt="Wrong answer" style="width:600px; height:auto;">  
  <br/>
- Further I found a [blog](https://medium.com/@mpotisambo8/ios-forensics-cheat-sheet-a121c74ef42d) for IOS cheatsheet and looked through /private/var/mobile/Containers/Shared/AppGroup/ where I found an image called Fallbackimage.png  
+ Further I found a <a href="https://medium.com/@mpotisambo8/ios-forensics-cheat-sheet-a121c74ef42d" style="color: orange; text-decoration: underline;text-decoration-style: dotted;">blog</a> for IOS cheatsheet and looked through /private/var/mobile/Containers/Shared/AppGroup/ where I found an image called Fallbackimage.png  
  <img src="/CTF-Writeup-2025/docs/assets/factor2.png" alt="Right" style="width:600px; height:auto;">   
  <br/>
     
