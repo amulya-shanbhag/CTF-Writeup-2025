@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CTF Writeups</title>
+    <title>{{ page.title }}</title>
     <style>
         body {
             background-color: #000;
@@ -38,12 +38,12 @@
             margin: 5px;
             transition: 0.3s;
         }
-        .links a:hover {
+        .links a:hover, .links a.selected {
             background-color: white;
             color: black;
         }
         .content {
-            text-align: left; /* Ensures content is left-aligned */
+            text-align: left;
             margin-top: 20px;
             padding: 10px;
             max-width: 700px;
@@ -51,26 +51,33 @@
             margin-right: auto;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let urlParams = new URLSearchParams(window.location.search);
+            let selectedPage = urlParams.get("page");
+            
+            if (selectedPage) {
+                let selectedLink = document.querySelector(`.links a[href*='${selectedPage}']`);
+                if (selectedLink) {
+                    selectedLink.classList.add("selected");
+                    document.querySelector(".links").prepend(selectedLink);
+                }
+            }
+        });
+    </script>
 </head>
 <body>
-
     <div class="container">
-        <!-- Centered Title -->
-        <div class="title">CTF Writeups</div>
-
-        <!-- Centered Navigation Links -->
+        <div class="title">{{ page.title }}</div>
         <div class="links">
             <a href="/CTF-Writeup-2025/mypages/ios/">iOS</a>
             <a href="/CTF-Writeup-2025/mypages/android/">Android</a>
             <a href="/CTF-Writeup-2025/mypages/windows/">Windows</a>
             <a href="/CTF-Writeup-2025/mypages/chromebook/">Chromebook</a>
         </div>
-
-        <!-- Left-Aligned Content from Markdown -->
         <div class="content">
             {{ content }}
         </div>
     </div>
-
 </body>
 </html>
