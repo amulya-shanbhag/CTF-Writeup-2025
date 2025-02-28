@@ -82,7 +82,7 @@ From the previous hackergotyou protom mail was observed, searched "mail" in Axio
 **Flag**: <span style="color:red">2024-11-12 22:11:09</span>  
   
 https://www.tiktok.com/@dochristmass/video/7436518844501347616?is_from_webapp=1
-Used [unfurl](https://dfir.blog/unfurl/) here  
+Used <a href="https://dfir.blog/unfurl/" style="color: orange; text-decoration: underline;text-decoration-style: dotted;">unfurl</a> here  
 <img src="/CTF-Writeup-2025/docs/assets/imagesw/unfurl.png" alt="Unfurl" style="width:600px; height:auto;">
 
 13.**Unravel the Mystery** - _What was the suggestion count when Mary was going to playing a popular word-based browser game?_ (25)  
