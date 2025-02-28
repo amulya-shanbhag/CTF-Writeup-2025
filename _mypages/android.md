@@ -86,8 +86,8 @@ layout: default
 14. **Lets Get Famous** - _How many followers does Mary have on TikTok?_  
  **Flag**:  <span style="color:red">0</span>  
  
- From the blog post, I got that the follower count for tiktok can be accessed from tiktok db - The Android TikTok app keeps message related data in SQLite databases located in the following path: _userdata/data/com.zhiliaoapp.musically/databases/_
- The databse file - db_im_contact - stored the users followers and following count
+ From the [abrignoni blogspot](https://abrignoni.blogspot.com/2018/11/finding-tiktok-messages-in-android.html), I got that the follower count for tiktok can be accessed from tiktok db - The Android TikTok app keeps message related data in SQLite databases located in the following path: _userdata/data/com.zhiliaoapp.musically/databases/_  
+ The databse file - db_im_contact - stored the users followers and following count  
  <img src="/CTF-Writeup-2025/docs/assets/imagesa/followers.png" alt="followers" style="width:600px; height:auto;">  
 
 
@@ -95,33 +95,56 @@ layout: default
 
 1. **Deadpool?** - _When was the Mint Mobile advertisement watched? YYYY-MM-DD HH:MM:SS EST_  
  **Flag**:  <span style="color:red">2024-11-06 12:01:21</span>   
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/ipadd.png" alt="logs" style="width:600px; height:auto;">  
+ 
+ For the ads watched, looked into the youtube history and searched keyword "mint", flag was right there.  
+ File path: _Takeout/YouTube and YouTube Music/history/watch-history.html_  
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/mint.png" alt="Ad watched" style="width:600px; height:auto;">   
 
 2. **Best job I ever had** - _When was the Senior Marketing Accociate job started? YYYY-MM_  
  **Flag**: <span style="color:red">2023-02</span>  
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/ipadd.png" alt="logs" style="width:600px; height:auto;">  
+ 
+ Again from Mary's resume downloaded  
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/jobstart.png" alt="start date" style="width:600px; height:auto;">  
 
 3. **Tryhard** - _What was this users GPA?_  
  **Flag**: <span style="color:red">4.0</span>   
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/ipadd.png" alt="logs" style="width:600px; height:auto;">  
+ 
+ I did not find this on Mary's resume and went on looking for documents stored in the Takeout/Drive/, found another file - Jones_Resume2024.docx abd the GPA was mentioned there.  
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/gpa.png" alt="GPA" style="width:600px; height:auto;">  
 
 4. **That's not very nice of you** - _What is the secret message found in an important file?_  
- **Flag**: <span style="color:red">ihateruth</span>   
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/ipadd.png" alt="logs" style="width:600px; height:auto;">  
+ **Flag**: <span style="color:red">ihateruth</span>  
+ 
+ Another document in the drive folder contained the flag  
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/hate.png" alt="Secret message" style="width:600px; height:auto;">  
 
 5. **Getting Healthy** - _What fitness membership did this user join?_  
  **Flag**: <span style="color:red">Fitbit</span>  
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/ipadd.png" alt="logs" style="width:600px; height:auto;">  
+ 
+ From the previous flags, the answer is Fitbit and also found in Takeout/Gemini/Fitbit/ folder  
 
 6. **Weekly Cycle** - _What day of the week did the user join this membership?_  
- **Flag**: <span style="color:red">Tuesday</span>  
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/ipadd.png" alt="logs" style="width:600px; height:auto;">  
+ **Flag**: <span style="color:red">Tuesday</span>
+ 
+ The path Takeout/Gemini/Fitbit/Your Profile contained a profile.csv which showed the membership date as 11/5/2024 which was Tuesday.  
+ However, at first I entered Sunday which is mentioned as start of the week and luckily has 2 attempts for this.  
+ 
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/profile.png" alt="Profile" style="width:600px; height:auto;">  
 
-7. **I think this IS LAND?** - _What was the closest trail to the picture of a body of water?_  
- **Flag**:  <span style="color:red">ISLAND LINE</span>  
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/ipadd.png" alt="logs" style="width:600px; height:auto;">  
+8. **I think this IS LAND?** - _What was the closest trail to the picture of a body of water?_  
+ **Flag**:  <span style="color:red">ISLAND LINE</span>
+ 
+ From the image in the takeout file, downloaded the image and extracted the exif data from the file and got location: 44 deg 29' 25.30" N, 73 deg 14' 4.99" W, looking for this on google maps closest trail to this is Island line trail.  
+ 
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/waterbody.png" alt="image" style="width:600px; height:auto;">   
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/waterbody2.png" alt="exif data" style="width:600px; height:auto;">   
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/waterbody2.png" alt="location" style="width:600px; height:auto;">   
 
-8. **Flashbang** -_ What is the switch on the bottom left of the "About ______" website for?_  
- **Flag**: <span style="color:red">Dark mode</span>  
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/ipadd.png" alt="logs" style="width:600px; height:auto;">  
+10. **Flashbang** - _What is the switch on the bottom left of the "About ______" website for?_  
+ **Flag**: <span style="color:red">Dark mode</span>
+ 
+ I didn't understand what website I should be looking for, later I looked into the android image in axiom and was typing "about" and about_play displayed in search suggestions and clicked on it showed the url - https://support.google.com/googleplay/?p=about_play, checking out this website showed language on the bottom left and and slightly overlapped with dark mode sttings
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/aboutplay.png" alt="search" style="width:600px; height:auto;">  
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/aboutplay2.png" alt="url" style="width:600px; height:auto;">  
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/about3.png" alt="dark mode" style="width:600px; height:auto;">  
 
