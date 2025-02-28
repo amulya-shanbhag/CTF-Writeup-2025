@@ -6,6 +6,8 @@ layout: default
 Prerequisites:
 Processed the IOS image using iLeapp and Magnet Axiom Examine.
 
+<h2>iOS</h2>
+
 1.**Peak Performance** -- *What version of IOS* (5)<br/>
  **Flag**: <span style="color:red">18.0</span>  
  <br/>
