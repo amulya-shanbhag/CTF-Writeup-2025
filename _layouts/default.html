@@ -53,12 +53,9 @@
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            let urlParams = new URLSearchParams(window.location.search);
-            let selectedPage = urlParams.get("page");
-            
+            let currentPath = window.location.pathname;
             document.querySelectorAll(".links a").forEach(link => {
-                let page = link.href.split("?page=")[1];
-                if (page === selectedPage) {
+                if (link.getAttribute("href") === currentPath) {
                     link.classList.add("selected");
                 }
             });
