@@ -39,7 +39,7 @@ Processed the IOS image using iLeapp and Magnet Axiom Examine.
 5.**Correct Me If I'm Wrong..** -- *How many words typed were autocorrected?* (10)<br/>
  **Flag**: <span style="color:red">51</span>   
  <br/>
- From the [infosec](https://www.infosecinstitute.com/resources/digital-forensics/ios-forensics/) I learnt the keyboard caches contained in the file - /private/var/mobile/Library/Keyboard which contained user_model_database.sqlite<br/>  
+ From the <a href="https://www.infosecinstitute.com/resources/digital-forensics/ios-forensics/)" style="color: orange; text-decoration: underline;text-decoration-style: dotted;">infosec</a> , I learnt the keyboard caches contained in the file - /private/var/mobile/Library/Keyboard which contained user_model_database.sqlite<br/>  
  <img src="/CTF-Writeup-2025/docs/assets/autocorrected.png" alt="Auto correct" style="width:600px; height:auto;">    
  <br/>
    
