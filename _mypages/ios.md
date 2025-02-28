@@ -108,7 +108,7 @@ Searched the processed image on Magnet Examine with the name of coffee shop and 
  The tiktok link from the chat - https://www.tiktok.com/@dochristmass/video/7436518844501347616?is_from_webapp=1&sender_device=pc - The number part in the URL itself seemed like datetime format. Looking for tools to break this I stumbled upon this site which   mentioned about unfurl - an open source tool for extracting URL  
  <img src="/CTF-Writeup-2025/docs/assets/unfurl.png" alt="Timestamp" style="width:600px; height:auto;">  
  <br/>
- Reference: https://dfir.blog/tinkering-with-tiktok-timestamps/, https://dfir.blog/unfurl/  
+ Reference: [https://dfir.blog/tinkering-with-tiktok-timestamps/](url), [https://dfir.blog/unfurl/](url)  
  <br/>
     
 15.**Directional Navigation** -- *What beach was searched for?*  
