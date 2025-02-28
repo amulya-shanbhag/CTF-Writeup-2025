@@ -83,15 +83,15 @@ From the previous hackergotyou protom mail was observed, searched "mail" in Axio
   
 https://www.tiktok.com/@dochristmass/video/7436518844501347616?is_from_webapp=1
 Used [unfurl](https://dfir.blog/unfurl/) here  
-<img src="/CTF-Writeup-2025/docs/assets/imagesw/proton.png" alt="Proton" style="width:600px; height:auto;">
+<img src="/CTF-Writeup-2025/docs/assets/imagesw/unfurl.png" alt="Unfurl" style="width:600px; height:auto;">
 
 13. **Unravel the Mystery** - _What was the suggestion count when Mary was going to playing a popular word-based browser game?_ (25)  
 **Flag**: <span style="color:red">12-6</span>  
 
 Google searched "popular word games", among those I know wordle is popular and further seached "word" on axiom to confirm. I went into the site to check if I could find the number of hints, kept trying 6 over and over as I was pretty sure. But for a 25 points worth, started analysing the wordle URLs, just as I started in the 1st URL I observed number 6 and tracking back it was sc=12-6 , which makes the suggestion count 6. 
 
-<img src="/CTF-Writeup-2025/docs/assets/imagesw/word.png" alt="Proton" style="width:600px; height:auto;">  
-<img src="/CTF-Writeup-2025/docs/assets/imagesw/word2.png" alt="Proton" style="width:600px; height:auto;">  
+<img src="/CTF-Writeup-2025/docs/assets/imagesw/word.png" alt="Google Search" style="width:600px; height:auto;">  
+<img src="/CTF-Writeup-2025/docs/assets/imagesw/word2.png" alt="SC" style="width:600px; height:auto;">  
 
 14. **Login Credentials Required** - What is Marys username on geocaching.com? (25)  
 **Flag**:  <span style="color:red">geomaryr</span>  
