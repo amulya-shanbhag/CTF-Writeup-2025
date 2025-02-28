@@ -40,7 +40,7 @@ Processed the IOS image using iLeapp and Magnet Axiom Examine.
  **Flag**: <span style="color:red">51</span>   
  <br/>
  From the [infosec](https://www.infosecinstitute.com/resources/digital-forensics/ios-forensics/) I learnt the keyboard caches contained in the file - /private/var/mobile/Library/Keyboard which contained user_model_database.sqlite<br/>  
- <img src="/CTF-Writeup-2025/docs/assets/autocorrected" alt="Auto correct" style="width:600px; height:auto;">    
+ <img src="/CTF-Writeup-2025/docs/assets/autocorrected.png" alt="Auto correct" style="width:600px; height:auto;">    
  <br/>
    
 6.**Where Are We Meeting?** -- *What time did ruth plan to meet Mary at Black Cap?* (10)   
