@@ -88,7 +88,7 @@ Searched "congrat" on Axiom and found email from fitbit congratulating Mary
 13.**Lets Get Famous** - _How many followers does Mary have on TikTok?_ (25)   
 **Flag**:  <span style="color:red">0</span>  
 
-From the [abrignoni blogspot](https://abrignoni.blogspot.com/2018/11/finding-tiktok-messages-in-android.html), I got that the follower count for tiktok can be accessed from tiktok db - The Android TikTok app keeps message related data in SQLite databases located in the following path: _userdata/data/com.zhiliaoapp.musically/databases/_  
+From the <a href="https://abrignoni.blogspot.com/2018/11/finding-tiktok-messages-in-android.html" style="color: orange; text-decoration: underline;text-decoration-style: dotted;">abrignoni blogspot</a>, I got that the follower count for tiktok can be accessed from tiktok db - The Android TikTok app keeps message related data in SQLite databases located in the following path: _userdata/data/com.zhiliaoapp.musically/databases/_  
 The databse file - db_im_contact - stored the users followers and following count  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/followers.png" alt="followers" style="width:600px; height:auto;">  
 
