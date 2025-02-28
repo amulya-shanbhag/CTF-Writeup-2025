@@ -3,9 +3,10 @@ title: "Chromebook"
 layout: default
 permalink: /mypages/chromebook/
 ---
-<h2>Chromebook</h2>  
 
-Prerequisites: Extracted the tar file and processed the chromebook image using cLeapp and Magnet Axiom Examine.  
+**Prerequisites**: Extracted the tar file and processed the chromebook image using cLeapp and Magnet Axiom Examine.  
+
+<h2>Chromebook</h2>  
 
 1.**Feeling: Connected** - _What was the ip address of the Chromebook?_ (5)   
   **Flag**: <span style="color:red">172.19.70.25</span>  
