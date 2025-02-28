@@ -5,19 +5,32 @@ layout: default
 
 <h2>Windows</h2>
 
-1. **whoami?** - _What is the SID for the user "chick"?_  
-  **Flag**: <span style="color:red">S-1-5-21-493923485-410185161-2094537482-1001</span>  
+1.**whoami?** - _What is the SID for the user "chick"?_  
+**Flag**: <span style="color:red">S-1-5-21-493923485-410185161-2094537482-1001</span>  
+ 
+The SID of users is stored in HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList
+<img src="/CTF-Writeup-2025/docs/assets/imagesw/SID.png" alt="SID" style="width:600px; height:auto;">  
 
-2. **Goodbye!** - _When was the last logoff time for the user "chick"? (YYYY-MM-DD HH:MM:SS)_  
-  **Flag**: <span style="color:red">2024-11-24 17:36:55</span>  
 
-3. **In the Zone** -  _What is the host URL that crow.jpg was downloaded from?_  
-  **Flag**: <span style="color:red">https://www.treehugger.com/thmb/EmZOvx28sGNqCtDqQQBMGv-aezM=/4288x2848/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2019__10__american-crow-portrait-01-b3f0cfbdbf164de59831c9725bfdbf67.jpg</span>  
+2.**Goodbye!** - _When was the last logoff time for the user "chick"? (YYYY-MM-DD HH:MM:SS)_  
+**Flag**: <span style="color:red">2024-11-24 17:36:55</span>  
 
-4. **Sweet Find** - _What popular game was installed on the computer?_  
-  **Flag**: <span style="color:red">Candy Crush Saga</span>  
+In the Windows events logs, searched with the keyword "logged off" or could search with event id 4634 and sorted by the time.
+<img src="/CTF-Writeup-2025/docs/assets/imagesw/logoff.png" alt="Log off time" style="width:600px; height:auto;">  
 
-5. **Buried Treasure** - _On what social media platform did Mary look at a Burlington news account?_  
+3.**In the Zone** -  _What is the host URL that crow.jpg was downloaded from?_  
+**Flag**: <span style="color:red">https://www.treehugger.com/thmb/EmZOvx28sGNqCtDqQQBMGv-aezM=/4288x2848/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2019__10__american-crow-portrait-01-b3f0cfbdbf164de59831c9725bfdbf67.jpg</span>  
+
+Searched with keyword "crow.jpg" and found the download source in the web related activities.  
+<img src="/CTF-Writeup-2025/docs/assets/imagesw/crow.png" alt="Download Source" style="width:600px; height:auto;">  
+
+4.**Sweet Find** - _What popular game was installed on the computer?_  
+**Flag**: <span style="color:red">Candy Crush Saga</span>  
+
+In the Installed Programs under Application Usage from the clue there was only one popular game
+<img src="/CTF-Writeup-2025/docs/assets/imagesw/candy.png" alt="Game" style="width:600px; height:auto;">  
+
+5.**Buried Treasure** - _On what social media platform did Mary look at a Burlington news account?_  
   **Flag**: <span style="color:red">X</span>  
 
 6. **Follow the Thread** - _Where did Mary look for help with her coding questions?_  
