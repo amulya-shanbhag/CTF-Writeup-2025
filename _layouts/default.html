@@ -57,7 +57,7 @@
             let selectedPage = urlParams.get("page");
             
             document.querySelectorAll(".links a").forEach(link => {
-                let page = link.getAttribute("href").split("=")[1];
+                let page = link.href.split("?page=")[1];
                 if (page === selectedPage) {
                     link.classList.add("selected");
                 }
