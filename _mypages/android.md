@@ -6,21 +6,21 @@ layout: default
 <h2>Android</h2>
 
 1. **That's a lot** - _What animal was in the TikTok sent via text?_  
- **Flag**:  <span style="color:red">Deer</span>  
- 
- For the texts sent, looked under the android messages section of the android image and searched with keyword "tiktok", opened the link and there were Deers as also seen from the reply to tiktok text.  
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/deer.png" alt="IP Address" style="width:600px; height:auto;">  
+**Flag**:  <span style="color:red">Deer</span>  
+
+For the texts sent, looked under the android messages section of the android image and searched with keyword "tiktok", opened the link and there were Deers as also seen from the reply to tiktok text.  
+<img src="/CTF-Writeup-2025/docs/assets/imagesa/deer.png" alt="IP Address" style="width:600px; height:auto;">  
 
 2. **When you C it** - _What was the name of the geocacheing app used_?  
- **Flag**: <span style="color:red">C:geo</span>  
+**Flag**: <span style="color:red">C:geo</span>  
  
- Searched keyword "geocaching", the playstore application came up in the searched and display name was right there.  
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/geocaching.png" alt="App Name" style="width:600px; height:auto;">  
+Searched keyword "geocaching", the playstore application came up in the searched and display name was right there.  
+<img src="/CTF-Writeup-2025/docs/assets/imagesa/geocaching.png" alt="App Name" style="width:600px; height:auto;">  
 
 3. **Finding a good book** - _What location was the user looking for on 2024-11-11 at 2:46:10 PM UTC?_  
- **Flag**: <span style="color:red">library champlain college</span>  
+**Flag**: <span style="color:red">library champlain college</span>  
  
- For location I started looking at the Google maps search logs from Axiom Location & Travel section, also from the clue I was looking for something related to "book" where there was only search for champlain college library  
+For location I started looking at the Google maps search logs from Axiom Location & Travel section, also from the clue I was looking for something related to "book" where there was only search for champlain college library  
  <img src="/CTF-Writeup-2025/docs/assets/imagesa/library.png" alt="Library" style="width:600px; height:auto;">  
 
 4. **Get in Contact** - _What is the users TikTok username?_  
@@ -138,7 +138,7 @@ layout: default
  
  <img src="/CTF-Writeup-2025/docs/assets/imagesa/waterbody.png" alt="image" style="width:600px; height:auto;">   
  <img src="/CTF-Writeup-2025/docs/assets/imagesa/waterbody2.png" alt="exif data" style="width:600px; height:auto;">   
- <img src="/CTF-Writeup-2025/docs/assets/imagesa/waterbody2.png" alt="location" style="width:600px; height:auto;">   
+ <img src="/CTF-Writeup-2025/docs/assets/imagesa/waterbody3.png" alt="location" style="width:600px; height:auto;">   
 
 10. **Flashbang** - _What is the switch on the bottom left of the "About ______" website for?_  
  **Flag**: <span style="color:red">Dark mode</span>
