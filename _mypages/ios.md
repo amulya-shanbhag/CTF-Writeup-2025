@@ -37,7 +37,7 @@ Processed the IOS image using iLeapp and Magnet Axiom Examine.
 5.**Correct Me If I'm Wrong..** -- *How many words typed were autocorrected?* (10)<br/>
  **Flag**: <span style="color:red">51</span>   
  <br/>
- From the [infosec](https://www.infosecinstitute.com/resources/digital-forensics/ios-forensics/) I learnt the keyboard caches contained in the file - /private/var/mobile/Library/Keyboard which contained user_model_database.sqlite<br/>
+ From the [infosec](https://www.infosecinstitute.com/resources/digital-forensics/ios-forensics/) I learnt the keyboard caches contained in the file - /private/var/mobile/Library/Keyboard which contained user_model_database.sqlite<br/>  
  <img src="/CTF-Writeup-2025/docs/assets/autocorrected" alt="Auto correct" style="width:600px; height:auto;">    
  <br/>
    
@@ -65,14 +65,14 @@ Searched the processed image on Magnet Examine with the name of coffee shop and 
 9.**Tracing The Envelope** -- *What was the IP address logged from Discord?* (10)  
  **Flag**: <span style="color:red">184.171.159.153</span>   
  <br/>
- From the question "Tracing the envelope", looked into email section on Examine and found a security notification email from discord
+ From the question "Tracing the envelope", looked into email section on Examine and found a security notification email from discord  
  <img src="/CTF-Writeup-2025/docs/assets/discordloginIP.png" alt="Discord login" style="width:600px; height:auto;">  
  <br/>
     
 10.**Where's Nashville?** -- *What is the Latitude of Nashville in the Weather App? Format: xx.xxxxxxx* (10)   
  **Flag**: <span style="color:red">36.1660667</span>   
  <br/>
- I tried to look into examine logs by performing different searches but failed to get exact location, spent some time here and then checked the iLeapp report which logged Weather App Locations report
+ I tried to look into examine logs by performing different searches but failed to get exact location, spent some time here and then checked the iLeapp report which logged Weather App Locations report  
  path - private\var\mobile\Containers\Shared\AppGroup\5A25F7AB-6542-44BF-BFF0-3A1B6E0EC1F1\Library\Preferences\group.com.apple.weather.plist  
  <img src="/CTF-Writeup-2025/docs/assets/locationnashville.png" alt="location" style="width:600px; height:auto;">  
  <br/>
@@ -80,7 +80,7 @@ Searched the processed image on Magnet Examine with the name of coffee shop and 
 11.**Important FACTor**- *What is the answer to second the equation in notes?* (25) 
  **Flag**: <span style="color:red">432</span>     
  <br/>
- The question mentioned in notes and went through the Apple notes under Documents and submitted 216 as flag which turned out to be wrong. Luckily this question allowed multiple attempts.
+ The question mentioned in notes and went through the Apple notes under Documents and submitted 216 as flag which turned out to be wrong. Luckily this question allowed multiple attempts.  
  <img src="/CTF-Writeup-2025/docs/assets/factor1.png" alt="Wrong answer" style="width:600px; height:auto;">  
  <br/>
  Further I found a [blog](https://medium.com/@mpotisambo8/ios-forensics-cheat-sheet-a121c74ef42d) for IOS cheatsheet and looked through /private/var/mobile/Containers/Shared/AppGroup/ where I found an image called Fallbackimage.png  
@@ -98,14 +98,14 @@ Searched the processed image on Magnet Examine with the name of coffee shop and 
  **Flag**: <span style="color:red">EARLYBF24</span>     
  <br/>
  In the iLeapp report I had come across this 40% off when looking for other flags and immediately digged into SMS section and entered 40%  
- path: private\var\mobile\Library\SMS\sms.db
+ path: private\var\mobile\Library\SMS\sms.db  
  <img src="/CTF-Writeup-2025/docs/assets/earlybf.png" alt="Code" style="width:600px; height:auto;">  
  <br/>
     
 14.**TikTok on the Clock** -- *In YYYY-MM-DD HH:MM:SS format, when was the tiktok video posted?* (25)  
  **Flag**: <span style="color:red">2024-11-12 22:11:09</span>     
  <br/>
- The tiktok link from the chat - https://www.tiktok.com/@dochristmass/video/7436518844501347616?is_from_webapp=1&sender_device=pc - The number part in the URL itself seemed like datetime format. Looking for tools to break this I stumbled upon this site which   mentioned about unfurl - an open source tool for extracting URL  
+ The tiktok link from the chat - https://www.tiktok.com/@dochristmass/video/7436518844501347616?is_from_webapp=1&sender_device=pc - The number part in the URL itself seemed like datetime format. Looking for tools to break this I stumbled upon this site which   mentioned about unfurl - an open source tool for extracting URL   
  <img src="/CTF-Writeup-2025/docs/assets/unfurl.png" alt="Timestamp" style="width:600px; height:auto;">  
  <br/>
  Reference: [https://dfir.blog/tinkering-with-tiktok-timestamps/](url), [https://dfir.blog/unfurl/](url)  
@@ -114,14 +114,14 @@ Searched the processed image on Magnet Examine with the name of coffee shop and 
 15.**Directional Navigation** -- *What beach was searched for?* (25)  
  **Flag**: <span style="color:red">North Beach</span>     
  <br/>
- Believing I could find this in the ios maps, searched with keyword "beach" in the axiom evidence and showed multiple beaches. However, also found a discord chat which mentioned north beach park, tried out the flag North beach
+ Believing I could find this in the ios maps, searched with keyword "beach" in the axiom evidence and showed multiple beaches. However, also found a discord chat which mentioned north beach park, tried out the flag North beach  
  <img src="/CTF-Writeup-2025/docs/assets/northbeach.png" alt="Beach" style="width:600px; height:auto;">  
  <br/>
     
 16.**SERIALously Old!** -- *Using format YYYY-MM, When was this device purchased?* (25)  
  **Flag**: <span style="color:red">2022-12</span>     
  <br/>
- The clue was given as finding serial number, which I could easily fetch from the device details section in iLeapp report. However, I got diverted into checking the itunes metadata and later I came across a site where I could check the phone coverage which    showed me the purchase date
+ The clue was given as finding serial number, which I could easily fetch from the device details section in iLeapp report. However, I got diverted into checking the itunes metadata and later I came across a site where I could check the phone coverage which    showed me the purchase date  
  <img src="/CTF-Writeup-2025/docs/assets/serialnumber1.png" alt="Serial number" style="width:600px; height:auto;">  
  <img src="/CTF-Writeup-2025/docs/assets/purchasedate.png" alt="Purchase date" style="width:600px; height:auto;">  
  <br/>
