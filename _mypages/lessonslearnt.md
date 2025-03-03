@@ -38,12 +38,13 @@ As a first-time CTF participant, here are some key things that helped me answer 
 
 1.**Dressing, with a dash. of 17 spices** - Decode the secret message: https://drive.google.com/file/d/1UuqI4YZDbvZcieXE4-t5BhEqiPHsGkIC/view?usp=drive_link  
 **Flag**: LOCKEDOUT
-There was morse code provided in the challenge and was the most easiest cipher challenge, I submitted a wrong answer at first and found the right flag after, but had only 1 attempt. Regret!!
+There was morse code provided in the challenge and was the most easiest cipher challenge, I submitted a wrong answer at first and found the right flag after, but had only 1 attempt. Regret!!  
+
 <img src="/CTF-Writeup-2025/docs/assets/lockedout.png" alt="Locked out" style="width:600px; height:auto;">  
   
 2.**A Shadow of the Real Thing** -	What is the hashed password for the user “chick”?  
 For the hashed password, I exported SAM and SYSTEM and ran Impacket on them, retrieving the NTLM hash for the user - 1576adde2adbf62ec5a977a64ff753b6. However, this turned out to be incorrect.
-From the clue "shadow", I immediately thought of the shadow file in Linux. Unfortunately, I didn’t think beyond that, even though the evidence contained a Kali VM. I was too fixated on my initial answer and only looked for a possible Windows hash, missing the Linux-based approach. 
+From the clue "shadow", I immediately thought of the shadow file in Linux. Unfortunately, I didn’t think beyond that, even though the evidence contained a Kali VM. I was too fixated on my initial answer and only looked for a possible Windows hash, missing the Linux-based approach.  
 <img src="/CTF-Writeup-2025/docs/assets/hash.png" alt="Locked out" style="width:600px; height:auto;">  
   
 <h2>Lessons Learned</h2>  
