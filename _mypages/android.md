@@ -10,25 +10,25 @@ Prerequisites: Processed the IOS image using aLeapp and Magnet Axiom Examine.
 1.**That's a lot** - _What animal was in the TikTok sent via text?_  (5)  
 **Flag**:  <span style="color:red">Deer</span>  
 
-For the texts sent, looked under the android messages section of the android image and searched with keyword "tiktok", opened the link and there were Deers as also seen from the reply to tiktok text.  
+For the sent texts, I looked under the Android Messages section of the Android image and searched for the keyword "TikTok". I opened the link found in the messages, which led to an image of deers, matching the reply to the TikTok-related text.    
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/deer.png" alt="IP Address" style="width:600px; height:auto;">  
 
 2.**When you C it** - _What was the name of the geocacheing app used_? (5)   
 **Flag**: <span style="color:red">C:geo</span>  
 
-Searched keyword "geocaching", the playstore application came up in the searched and display name was right there.  
+I searched for the keyword "geocaching", and the Play Store application appeared in the search results. The display name was visible right there.  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/geocaching.png" alt="App Name" style="width:600px; height:auto;">  
 
 3.**Finding a good book** - _What location was the user looking for on 2024-11-11 at 2:46:10 PM UTC?_ (5)   
 **Flag**: <span style="color:red">library champlain college</span>  
 
-For location I started looking at the Google maps search logs from Axiom Location & Travel section, also from the clue I was looking for something related to "book" where there was only search for champlain college library  
+For the location, I started by examining the Google Maps search logs in the Axiom Location & Travel section. Based on the clue, I was specifically looking for something related to "book". The only relevant search I found was for Champlain College Library.    
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/library.png" alt="Library" style="width:600px; height:auto;">  
 
 4.**Get in Contact** - _What is the users TikTok username?_ (5)   
 **Flag**: <span style="color:red">mary.jones7358</span>
 
-Searched with tiktok and found the username in tiktok contacts - social networking section in Axiom  
+I searched for "TikTok" and found the username in the TikTok contacts under the Social Networking section in Axiom.  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/username.png" alt="username" style="width:600px; height:auto;">  
 
 5.**Highspeed Internet** - _What is the SIM display name?_ (5)   
@@ -40,31 +40,33 @@ Searched with keyword "sim" and that displayed android sim card information
 6.**Some Connections** - _What device did the user connect to on 2024-11-05?_ (5)  
 **Flag**: <span style="color:red">Google Pixel Watch 02N0</span>  
 
-Searched with the keyword "connected" to see if there were any such email or notifications. In the email on 2024-11-05, email from Google pixel was recieved, but wasn't sure if from the email if it was connected to the device.  
-Further searched "Google Pixel" and under bluetooth devices was the connection on the same day.  
+I searched for the keyword "connected" to check for any related emails or notifications. In an email dated 2024-11-05, I found an email from Google Pixel, but it wasn't clear from the email whether the device was actually connected.  
+
+To confirm, I further searched for "Google Pixel" and found a Bluetooth connection under the Bluetooth devices section on the same day.    
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/pixel.png" alt="Email" style="width:600px; height:auto;">  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/pixel2.png" alt="Bluetooth" style="width:600px; height:auto;">  
 
 7.**The Era of Pop Stars** - _What song was the user listening to on 2024-11-30 at 8:45:00 AM?_ (5)    
 **Flag**: <span style="color:red">Fortnight</span>   
 
-Spent some time looking for the right path in axiom, had no luck and checked the aLeapp report - Recent Activity_0.html - 
-File path: \data\user\0\com.google.android.as\databases\history_db
+I spent some time searching for the right path in Axiom but had no luck. I then checked the aLeapp report (Recent Activity_0.html), and there it was.  
+File path: \data\user\0\com.google.android.as\databases\history_db   
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/fortnight.png" alt="Fortnight" style="width:600px; height:auto;">  
 
 8.**Get Educated**- _What degree does Mary have?_ (10)  
 **Flag**:  <span style="color:red">Associate of Applied Science Marketing</span>  
 
-Had extracted Mary's resume in previous challenges which also mentioned her degree
+I had previously downloaded Mary's resume in an earlier challenge, which also mentioned her degree.
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/degree.png" alt="Degree" style="width:600px; height:auto;">  
 
 9.**That would look good in a Frame** - _What is the name of the structure seen in the picture taken at night?_ (10)  
 **Flag**: <span style="color:red">Moran Frame</span>    
 
-For the pictures taken, I checked the Google photos on aLeapp which did not give me the original picture, and as android photos are stored under dcim, I performed a search with dcim and downloaded the original picture from Axiom image. I tried all other names on the structure. I zoomed into the picture and found "Moran" written in light gray. Entered Moran as flag and that was wrong.
+For the pictures taken, I first checked Google Photos in aLeapp, but it did not provide the original image. Since Android photos are typically stored under the DCIM folder, I performed a search for "DCIM" and downloaded the original picture from the Axiom image.  
+I also tried searching using other possible folder names within the directory structure. After zooming into the image, I noticed "Moran" written in light gray. Assuming it was the correct answer, I entered "Moran" as the flag, but it turned out to be incorrect.  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/Moranframe.png" alt="Moranimage" style="width:600px; height:auto;">  
 
-Further I extracted the exif data of the picture which gave me the location of the image taken - 44°28'53.7"N 73°13'25.3"W, Checked this out on google maps  
+Next, I extracted the EXIF data from the picture, which provided the location coordinates: 44°28'53.7"N 73°13'25.3"W. I then checked this location on Google Maps to gather more context about where the image was taken.  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/moran2.png" alt="structure" style="width:600px; height:auto;"> <img src="/CTF-Writeup-2025/docs/assets/imagesa/moran3.png" alt="maps" style="width:600px; height:auto;">  
 
 10.**I love Natur** - _What language was the nature website in?_ (10)  
@@ -129,8 +131,8 @@ From the previous flags, the answer is Fitbit and also found in Takeout/Gemini/F
 6.**Weekly Cycle** - _What day of the week did the user join this membership?_ (5)   
 **Flag**: <span style="color:red">Tuesday</span>
 
-The path Takeout/Gemini/Fitbit/Your Profile contained a profile.csv which showed the membership date as 11/5/2024 which was Tuesday.  
-However, at first I entered Sunday which is mentioned as start of the week and luckily has 2 attempts for this.  
+The path Takeout/Gemini/Fitbit/Your Profile contained a profile.csv file, which showed the membership date as 11/5/2024, which was a Tuesday.  
+However, at first, I mistakenly entered Sunday, as it was mentioned as the start of the week. Fortunately, the question allowed two attempts, so I was able to correct my answer.  
 
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/profile.png" alt="Profile" style="width:600px; height:auto;">  
 
@@ -146,7 +148,9 @@ From the image in the takeout file, downloaded the image and extracted the exif 
 8.**Flashbang** - _What is the switch on the bottom left of the "About ______" website for?_ (10)   
 **Flag**: <span style="color:red">Dark mode</span>
 
-I didn't understand what website I should be looking for, later I looked into the android image in axiom and was typing "about" and about_play displayed in search suggestions and clicked on it showed the url - https://support.google.com/googleplay/?p=about_play, checking out this website showed language on the bottom left and and slightly overlapped with dark mode sttings
+At first, I wasn’t sure which website I needed to look for. Later, while searching through the Android image in Axiom, I typed "about", and "about_play" appeared in the search suggestions.  Clicking on it revealed the URL: _https://support.google.com/googleplay/?p=about_play_  
+Checking this website, I found the language setting located at the bottom left. However, it was slightly overlapped with the dark mode settings, making it less.  
+
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/aboutplay.png" alt="search" style="width:600px; height:auto;">  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/aboutplay2.png" alt="url" style="width:600px; height:auto;">  
 <img src="/CTF-Writeup-2025/docs/assets/imagesa/about3.png" alt="dark mode" style="width:600px; height:auto;">  
