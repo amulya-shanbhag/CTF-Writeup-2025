@@ -21,11 +21,11 @@ In Magnet axiom, android contacts under communication section shows only 1 conta
   <img src="/CTF-Writeup-2025/docs/assets/imagesc/contactnumber.png" alt="phone" style="width:600px; height:auto;">  
 
 3.**Just five more minutes** - _How was the device most commonly woken up?_  (10)   
-  **Flag**: <span style="color:red">Power Button</span>  
+**Flag**: <span style="color:red">Power Button</span>  
   
-I was looking for eventlog file and In the cLeapp report index.html file, there is a section called Chrome OS event logs, searched for the wake source and sorted by detail. Power Button was most commonly used.  
-  File path: temp\var\log\eventlog.txt  
-  <img src="/CTF-Writeup-2025/docs/assets/imagesc/powerbutton.png" alt="wakesource" style="width:600px; height:auto;">  
+I was searching for the event log file and found a section called Chrome OS Event Logs in the cLeapp report (index.html). I then searched for "wake source" and sorted the results by detail. The **Power Button** appeared as the most commonly used wake source.   
+File path: temp\var\log\eventlog.txt   
+<img src="/CTF-Writeup-2025/docs/assets/imagesc/powerbutton.png" alt="wakesource" style="width:600px; height:auto;">  
 
 4.**They'll hire anyone these days** - _How many months was Mary employed with her company?_  (10)  
   **Flag**: <span style="color:red">22</span>  
@@ -56,39 +56,39 @@ There were multiple youtube and web searches for this TV show
 8.**How'd your mic get so crispy?** - _What is the version of the noise supression software?_ (10)  
   **Flag**: <span style="color:red">253018</span>    
 
-I did not know which noise supression software I should be looking for. From the clue, I googled crispy microphone and that showed an application called Krisp - a desktop app for noise cancellation.    
-The answer was right there in the path, however I did not attempt the answer with that number, but followed the path which led me to the same version number.   
-  <img src="/CTF-Writeup-2025/docs/assets/imagesc/crisp1.png" alt="Crisp" style="width:600px; height:auto;">   
-  <img src="/CTF-Writeup-2025/docs/assets/imagesc/crisp2.png" alt="Crisp 2" style="width:600px; height:auto;">   
+I wasn’t sure which noise suppression software I needed to look for. Using the clue, I Googled "crispy microphone", which led me to an application called Krisp—a desktop app for noise cancellation.  
+The answer was already in the path, but I didn’t immediately attempt it with the version number listed there. Instead, I followed the full file path, which ultimately led me to the same version number.   
+<img src="/CTF-Writeup-2025/docs/assets/imagesc/crisp1.png" alt="Crisp" style="width:600px; height:auto;">   
+<img src="/CTF-Writeup-2025/docs/assets/imagesc/crisp2.png" alt="Crisp 2" style="width:600px; height:auto;">   
 
 9.**The start of an addiction** - _What date was the game installed on the system?_ (25)  
-  **Flag**: <span style="color:red">11/16/2024</span>  
+**Flag**: <span style="color:red">11/16/2024</span>  
   
-When looking for the previous flags, I came across clash royale game on Ruth's device and searched with clash, under Google Play Applications in Axiom Examine, you could get the application install date.  
-  <img src="/CTF-Writeup-2025/docs/assets/imagesc/clashroyale.png" alt="Game App" style="width:600px; height:auto;">  
+While searching for previous flags, I came across the Clash Royale game on Ruth's device. I then searched for "Clash" in Axiom Examine, under the Google Play Applications section, where I was able to find the application install date.  
+<img src="/CTF-Writeup-2025/docs/assets/imagesc/clashroyale.png" alt="Game App" style="width:600px; height:auto;">  
 
 <h2>Chromebook Takeout</h2>
 
 1.**Boorrriiiinnggg** - _What was searched 2024-11-12, 20:17:13 EST?_ (5)   
-  **Flag**: <span style="color:red">iphone aesthetic wallpaper</span>  
+**Flag**: <span style="color:red">iphone aesthetic wallpaper</span>  
   
 The question was about searches, found the search activity in takeout folders path: _Takeout/My Activity/Search/_ and _Takeout/My Activity/Image Search/_ and found an Image search folder  
-  <img src="/CTF-Writeup-2025/docs/assets/imagesc/wallpaper.png" alt="Search Keyword" style="width:600px; height:auto;">  
+<img src="/CTF-Writeup-2025/docs/assets/imagesc/wallpaper.png" alt="Search Keyword" style="width:600px; height:auto;">  
 
 2.**Nice kicks** - _What is the name of the shoes created?_ (5)  
-  **Flag**: <span style="color:red">floppers</span>  
+**Flag**: <span style="color:red">floppers</span>  
   
 From chromebook section, **I definitely need new shoes** - The shoes name was on the advertizement image, the same was searched on AI observed from the file _/Takeout/My Activity/Gemini Apps/MyActivity.html_   
 <img src="/CTF-Writeup-2025/docs/assets/imagesc/floppers.png" alt="Floppers" style="width:600px; height:auto;">
 
 3.**Your shirt your way** - _What was the name of the shirt company?_ (5)  
-  **Flag**: <span style="color:red">TypeShirt</span>   
+**Flag**: <span style="color:red">TypeShirt</span>   
   
 In the same folder as the above flag, I searched with shirt which showed shirt company as Typeshirt   
 <img src="/CTF-Writeup-2025/docs/assets/imagesc/typeshirt.png" alt="Shirt Company" style="width:600px; height:auto;">
 
-4.**Shoe will have fun with this one** - _What is the shoe image named with file extension?_ (5)  
-  **Flag**: <span style="color:red">f12cb76daad6c8d1.png</span>  
+4.**Shoe will have fun with this one** - _What is the shoe image named with file extension?_ (5)   
+**Flag**: <span style="color:red">f12cb76daad6c8d1.png</span>  
    
 Looked for the above seen floppers image on Axiom and the file name was right there.
    <img src="/CTF-Writeup-2025/docs/assets/imagesc/shoename.png" alt="Shoe name" style="width:600px; height:auto;">  
