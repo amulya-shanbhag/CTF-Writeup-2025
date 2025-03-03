@@ -68,5 +68,5 @@ From the clue "shadow", I immediately thought of the shadow file in Linux. Unfor
 -- Keeping structured notes would help recall steps taken, tools used, and approaches tested. Recording submitted flags prevents repeating failed attempts.
   
 7.**Stay Calm and Have Fun!** 😃  
-A cool-headed approach leads to better problem-solving. Treating the CTF as a learning experience removes pressure and enhances overall performance.
+-- A cool-headed approach leads to better problem-solving. Treating the CTF as a learning experience removes pressure and enhances overall performance.
   
